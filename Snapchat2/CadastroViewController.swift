@@ -42,7 +42,35 @@ class CadastroViewController: UIViewController {
                             if erro == nil {
                                 print("Sucesso ao cadastrar usuário!")
                             }else {
-                                print("Erro ao cadastrar usuário!")
+                                
+                                // ERROR_INVALID_EMAIL
+                                // ERROR_WEAK_PASSWORD
+                                // ERROR_EMAIL_ALREADY_IN_USE
+                                
+                                let erroR = erro! as NSError
+                                if let codigoERRO = erroR.userInfo["error_name"] {
+                                    
+                                    let erroTexto = codigoERRO as! String
+                                    var mensagemErro = " "
+                                    switch erroTexto {
+                                        case "ERROR_INVALID_EMAIL" :
+                                            mensagemErro = "E-mail inválido, digite um e-mail válido"
+                                            break
+                                        case "ERROR_WEAK_PASSWORD" :
+                                            mensagemErro = "Senha fraca"
+                                            break
+                                        case "ERROR_EMAIL_ALREADY_IN_USE" :
+                                            mensagemErro = "Ja tem o email"
+                                            break
+                                        
+                                    default:
+                                        mensagemErro = "Dados incorretos"
+                                    }
+                                    
+                                    self.exibirMensagem(titulo: "Dados inválidos", mensagem: mensagemErro)
+                                    
+                                }
+                                
                             }
                             
                         }
