@@ -256,7 +256,7 @@
         <!--Snaps-->
         <scene sceneID="lId-L3-lWb">
             <objects>
-                <viewController id="KEd-AP-uXe" sceneMemberID="viewController">
+                <viewController id="KEd-AP-uXe" customClass="SnapsViewController" customModule="Snapchat2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qqb-mz-0pi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -264,7 +264,11 @@
                         <viewLayoutGuide key="safeArea" id="d67-bF-P2i"/>
                     </view>
                     <navigationItem key="navigationItem" title="Snaps" id="dhY-qG-dm0">
-                        <barButtonItem key="leftBarButtonItem" title="Sair" id="bH8-f5-C4T"/>
+                        <barButtonItem key="leftBarButtonItem" title="Sair" id="bH8-f5-C4T">
+                            <connections>
+                                <action selector="sair:" destination="KEd-AP-uXe" id="9fT-Y2-eZc"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="qYe-o8-fd1">
                             <connections>
                                 <segue destination="F4X-Ve-LTz" kind="show" id="ev1-Mo-zeB"/>
@@ -276,10 +280,10 @@
             </objects>
             <point key="canvasLocation" x="3759.1999999999998" y="62.518740629685162"/>
         </scene>
-        <!--View Controller-->
+        <!--Foto View Controller-->
         <scene sceneID="GiQ-Tu-C8V">
             <objects>
-                <viewController id="F4X-Ve-LTz" sceneMemberID="viewController">
+                <viewController id="F4X-Ve-LTz" customClass="FotoViewController" customModule="Snapchat2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HYb-JS-geq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

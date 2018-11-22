@@ -16,6 +16,8 @@
 		E784D63B21679858000C6CD6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E784D63A21679858000C6CD6 /* GoogleService-Info.plist */; };
 		E784D63D2167AD3E000C6CD6 /* EntrarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E784D63C2167AD3E000C6CD6 /* EntrarViewController.swift */; };
 		E784D63F2167AD59000C6CD6 /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E784D63E2167AD59000C6CD6 /* CadastroViewController.swift */; };
+		E95646FA21A718BD00F11AA7 /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95646F921A718BD00F11AA7 /* SnapsViewController.swift */; };
+		E95646FC21A718FC00F11AA7 /* FotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95646FB21A718FC00F11AA7 /* FotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		E784D63A21679858000C6CD6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E784D63C2167AD3E000C6CD6 /* EntrarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntrarViewController.swift; sourceTree = "<group>"; };
 		E784D63E2167AD59000C6CD6 /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
+		E95646F921A718BD00F11AA7 /* SnapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
+		E95646FB21A718FC00F11AA7 /* FotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,8 @@
 				E784D62A216797DE000C6CD6 /* ViewController.swift */,
 				E784D63C2167AD3E000C6CD6 /* EntrarViewController.swift */,
 				E784D63E2167AD59000C6CD6 /* CadastroViewController.swift */,
+				E95646F921A718BD00F11AA7 /* SnapsViewController.swift */,
+				E95646FB21A718FC00F11AA7 /* FotoViewController.swift */,
 				E784D62C216797DE000C6CD6 /* Main.storyboard */,
 				E784D62F216797DF000C6CD6 /* Assets.xcassets */,
 				E784D631216797DF000C6CD6 /* LaunchScreen.storyboard */,
@@ -216,9 +222,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E95646FA21A718BD00F11AA7 /* SnapsViewController.swift in Sources */,
 				E784D62B216797DE000C6CD6 /* ViewController.swift in Sources */,
 				E784D629216797DE000C6CD6 /* AppDelegate.swift in Sources */,
 				E784D63D2167AD3E000C6CD6 /* EntrarViewController.swift in Sources */,
+				E95646FC21A718FC00F11AA7 /* FotoViewController.swift in Sources */,
 				E784D63F2167AD59000C6CD6 /* CadastroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
