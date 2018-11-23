@@ -8,15 +8,37 @@
 
 import UIKit
 
-class FotoViewController: UIViewController {
+class FotoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-//    var imagePicker = UIImagePickerController
+    @IBOutlet weak var imagem: UIImageView!
+    @IBOutlet weak var descricao: UITextField!
     
-
+    var imagePicker = UIImagePickerController()
+    
+    @IBAction func selecionarFoto(_ sender: Any) {
+        
+        imagePicker.sourceType = .savedPhotosAlbum
+        present(imagePicker, animated: true, completion: nil)
+        
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        
+        let imagemRecuperada = info [UIImagePickerControllerOriginalImage] as! UIImage
+        imagem.image = imagemRecuperada
+        
+        print(info)
+        imagePicker.dismiss(animated: true, completion: nil)
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        imagePicker.delegate = self
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
