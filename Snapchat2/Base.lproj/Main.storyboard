@@ -317,6 +317,7 @@
                                 </state>
                                 <connections>
                                     <action selector="entrar:" destination="30k-tU-tMC" eventType="touchUpInside" id="kVY-B2-JCn"/>
+                                    <action selector="proximoPasso:" destination="F4X-Ve-LTz" eventType="touchUpInside" id="0Lo-T9-Dff"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -339,6 +340,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="botaoProximo" destination="kEI-6g-Hjt" id="75b-Xm-HBh"/>
                         <outlet property="descricao" destination="LmL-A8-sOg" id="kQE-yB-LYg"/>
                         <outlet property="imagem" destination="km1-i4-H2M" id="mil-Og-iHh"/>
                     </connections>
